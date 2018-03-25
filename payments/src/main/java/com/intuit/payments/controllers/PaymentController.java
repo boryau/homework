@@ -1,7 +1,7 @@
 package com.intuit.payments.controllers;
 
 
-import com.intuit.payments.data.PaymentRequest;
+import com.intuit.common.PaymentRequest;
 import com.intuit.payments.data.PaymentResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,6 +27,11 @@ public class PaymentController {
         return response;
     }
 
+
+    /**
+     * Analyze the payment before rerouting it to Queue
+     * @param paymentRequest
+     */
     private void analyzePayment(PaymentRequest paymentRequest) {
 
     }

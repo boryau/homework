@@ -11,6 +11,6 @@ public class RiskApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RiskApplication.class, args);
 	}
-        TopicListener listener = new TopicListener();
+     //   TopicListener listener = new TopicListener();
 
 	}

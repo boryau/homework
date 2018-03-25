@@ -1,22 +1,26 @@
-package com.intuit.payments.data;
+package com.intuit.common;
+
+//import javax.validation.constraints.NotBlank;
+
+import javax.validation.constraints.NotBlank;
 
 public class PaymentRequest {
-
-    private Long amount;
+   @NotBlank(message = "Amount can't be blank")
+    private Double amount;
 
     private String currency;
-
+    @NotBlank(message = "UserId is required")
     private String userId;
-
+    @NotBlank(message = "PayeeId is required")
     private String payeeId;
 
     private String paymentMethodId;
 
-    public Long getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(Long amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
