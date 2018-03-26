@@ -1,8 +1,8 @@
-This is Intuit home work assigment
+****This is Intuit home work assigment
 
 Installation guidelenes- 
 MySQL
-    1) Install MySql on your local machine or use allready installed version you have
+    1) Install MySql on your local machine or use allready installed version you have``
     2) Define new schema - intuit
     3)Run db.sql script(commited with the project) in order to create a new table
     4) Change in module - risk-> application.properties to your connection details of mySql
