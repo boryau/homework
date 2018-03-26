@@ -31,5 +31,5 @@ Project -
                     Change application.properties-> kafka.topic to correct topic for the producer
         risk- Consumes messages from kafka. Runs RiskEngine and saves to DB with the appropriate status
                     Change application.properties-> kafka.url to your kafka url
-                    Change application.properties-> kafka.topic to correct topic for the producer
+                    Change application.properties-> kafka.topic to correct topic for the consumer
         common - Saves the commoon object which is serilaized to Kafka by the payment module and desirialized by risk module
