@@ -1,4 +1,4 @@
-****This is Intuit home work assigment
+This is Intuit home work assigment
 
 Installation guidelenes- 
 MySQL
@@ -20,11 +20,16 @@ Kafka -
     5)Start Kafka
     	bin\windows\kafka-server-start.bat config\server.properties
 
- For OsX/Linux - instructions on kafka site. The scripts are under bin floder and not bin\windows
+ For OsX/Linux - instructions on kafka site. The scripts are under bin folder and not bin\windows
       
       
 Project -
-    Two modules -
+    Three modules -
      
         payments- Recieve payments via RestAPI - PaymentController and sends them to Kafka
-        risk- Consumes messages from kafka. Runs RiskEngine and saves to DB 
+                    Change application.properties-> kafka.url to your kafka url
+                    Change application.properties-> kafka.topic to correct topic for the producer
+        risk- Consumes messages from kafka. Runs RiskEngine and saves to DB with the appropriate status
+                    Change application.properties-> kafka.url to your kafka url
+                    Change application.properties-> kafka.topic to correct topic for the producer
+        common - Saves the commoon object which is serilaized to Kafka by the payment module and desirialized by risk module

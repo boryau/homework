@@ -59,4 +59,15 @@ public class PaymentRequest {
     public void setPaymentMethodId(String paymentMethodId) {
         this.paymentMethodId = paymentMethodId;
     }
+
+    @Override
+    public String toString() {
+        return "PaymentRequest{" +
+                "amount=" + amount +
+                ", currency='" + currency + '\'' +
+                ", userId='" + userId + '\'' +
+                ", payeeId='" + payeeId + '\'' +
+                ", paymentMethodId='" + paymentMethodId + '\'' +
+                '}';
+    }
 }
