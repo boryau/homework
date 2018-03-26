@@ -3,14 +3,18 @@ package com.intuit.common;
 //import javax.validation.constraints.NotBlank;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 public class PaymentRequest {
-   @NotBlank(message = "Amount can't be blank")
+    @NotNull(message = "Amount can't be blank")
     private Double amount;
 
     private String currency;
+
     @NotBlank(message = "UserId is required")
     private String userId;
+
     @NotBlank(message = "PayeeId is required")
     private String payeeId;
 
